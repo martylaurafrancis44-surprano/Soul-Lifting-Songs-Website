@@ -1,0 +1,179 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(-45deg, purple, #4b0082, #6a0dad,#2e0854);
+    background-size: 400% 400%;
+    animation: gradientBG 10s eas infinite;
+    text-align: center;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 
+        0% 50%;}
+        50% {background-position: 
+            100% 50%;}
+            100% {background-position: 
+                0% 50%;}
+}
+
+header {
+    background: linear-gradient(to right, purple, #4b0082);
+    color: white;
+    padding: 30px;
+}
+
+header img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 300px;
+    animation: glow 2s ease-in-out infinite alternate
+}
+
+@keyframes glow {
+    from{
+        filter: drop-shadow(0 0 5px gold);
+}
+to {
+    filter: drop-shadow(0 0 25px gold);
+}
+}
+
+.slogan {
+    color: gold;
+    font-style: italic;
+    font-size: 18px;
+}
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid gold;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink .8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0;}
+    to { width: 100%;}
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a :hover{
+    color: gold;
+}
+
+nav a.active {
+    color: white;
+    background-color: black;
+}
+
+nav a:hover {
+    color: purple;
+    background-color: gold;
+    border-radius: 5px;
+}
+
+.hero {
+    padding: 80px 20px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url(file_000000000dac720abf15005dc04c397e.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+@keyframes fadeUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: purple;
+    color: white;
+}
+
+img {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.page-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.page-title {
+    color: purple;
+    margin-bottom: 20px;
+}
+
+.page-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.page-container :hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.page-title{
+    text-shadow: 0 0 10px gold;
+}
+
+
+footer {
+    background: purple;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
